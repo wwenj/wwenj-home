@@ -1,0 +1,165 @@
+.heade{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+}
+.nav-box{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+}
+.nav{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+}
+.nav-box:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -35px;
+    left: 0;
+    border-style: solid;
+    border-width:0 0 35px 100vw;
+    border-color: transparent #ffffff;
+}
+/* 导航logo */
+.logo-home img{
+    vertical-align: bottom;
+}
+.logo-home{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+}
+.logo-home span{
+    display: inline-block;
+    height: 50px;
+    line-height: 72px;
+    vertical-align: bottom;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*导航选项*/
+.nav-con{
+    height: 50px;
+    float: right;
+    line-height: 55px;
+    /* border: 1px solid black; */
+}
+.nav-con a{
+    display: inline-block;
+    padding: 0 15px;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.nav-con a:hover{
+    color: #f70;
+}
+.concent{
+    width: 100%;
+    height: 1500px;
+    overflow: hidden;
+}
+/*第一图*/
+.con1{
+    width: 100%;
+    height: 680px;
+    background:url("../img/con1.jpg")no-repeat -180px 0 ;
+}
+/*第二图*/
+.con2:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -35px;
+    left: 0;
+    border-style: solid;
+    border-width:35px 100vw 0 0;
+    border-color: transparent #222;
+}
+.con2{
+    width: 100%;
+    height: 610px;
+    background: #222;
+    position: relative;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#222),color-stop(1,#333));
+}
+/*首次进入遮罩层*/
+.mark-b {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    border-width: 100vh 100vw 0 0;
+    border-style: solid;
+    border-color: #222 transparent;
+    z-index: 50;
+}
+
+.mark-w {
+    width: 0;
+    height: 0;
+    position: fixed;
+    bottom: 0vh;
+    right: -100vw;
+    border-width: 0 0 100vh 100vw;
+    border-style: solid;
+    border-color: yellow transparent;
+    z-index: 50;
+}
+
+.mark-box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #222;
+    opacity: 0;
+    display: none;
+    z-index: 51;
+}
+
+.mark-con {
+    width: 320px;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -160px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 100;
+    box-shadow: 0px 0px 15px #888888;
+    color: #fff;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    transform: rotateY(90deg);
+    transition: all 0.8s;
+}
+
+.mark-con p {
+    text-align: center;
+    line-height: 27px;
+    font-size: 16px;
+    color: rgb(224, 222, 222);
+}
+
+.mark-con .mark-con-title {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 19px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.mark-con a {
+    font-size: 12px;
+    color: #ccc;
+    float: right;
+    margin-top: 25px;
+}
