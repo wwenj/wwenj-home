@@ -1,3 +1,12 @@
+
+body::-webkit-scrollbar {  
+    width: 6px;  
+    background-color: rgb(251, 245, 245);  
+} 
+body::-webkit-scrollbar-thumb  
+{  
+    background-color: #555;  
+}    
 .heade{
     width: 100%;
     position: fixed;
@@ -7,6 +16,9 @@
     width: 100%;
     height: 50px;
     background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .nav{
     width: 1200px;
@@ -60,6 +72,7 @@
     padding: 0 15px;
     margin-right: 15px;
     font-size: 14px;
+    transition: all 0.3s;
 }
 .nav-con a:hover{
     color: #f70;
@@ -73,7 +86,43 @@
 .con1{
     width: 100%;
     height: 680px;
-    background:url("../img/con1.jpg")no-repeat 0 0 ;
+    background:url("../img/con1.jpg")no-repeat 0 0;
+    padding-top: 1px;
+}
+.con1 h2{
+    width: 1200px;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Georgia" ;
+    margin: auto;
+    margin-top: 230px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #a3df24;
+    /* rgb(116, 115, 115) */
+}
+.con1 p{
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 4px 4px 8px rgb(59, 58, 59);
+}
+.con1 .guanyu{
+    margin-top: 40px;
+}
+.con1 .guanyu span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    /* background: #f39f72; */
+}
+.con1 .guanyu span:hover{
+    background: #fff;
 }
 /*第二图*/
 .con2:before{
@@ -170,19 +219,40 @@
 /* 第四图 */
 .con4{
     width: 100%;
-    height: 230px;
-    background: #27a3ca;
-    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(.5,#2a97e4),color-stop(1,#21b3ac));
+    height:300px;
+    /* background: #27a3ca; */
+    /* background-image: -webkit-gradient(linear,left top,right bottom,color-stop(.5,#2a97e4),color-stop(1,#21b3ac)); */
+    background: url("../img/con4-bg.jpg")
 }
 /* 第五图 */
 .con5{
     width:100%;
-    height: 130px;
+    height: 150px;
     background: #fff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 14px;
+}
+.con5 a{
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px; 
+    border-radius:3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    margin:0 15px;
+}
+.con5-left{
+    color: #ffffff;
+    background: -webkit-linear-gradient(top,#fa7d3c,#f55f10); 
+}
+.con5-right{
+    color: #333;
+    border: 1px solid #d3d3d3;
 }
 .con6{
     width: 100%;
-    height: 370px;
+    height: 350px;
     background: #333333;
     padding: 30px 0;
     box-sizing: border-box;
@@ -223,12 +293,13 @@
 .food-top a{
     color: #888;
     font-size: 14px;
+    transition: all 0.5s;
 }
 .food-top a:hover{
     color: #fff;
     text-decoration: underline;
 }
-.food-top span{
+.guanyu span{
     display: inline-block;
     width: 42px;
     height: 42px;
@@ -243,13 +314,88 @@
     box-sizing: border-box;
     transition: all 0.5s;
 }
-.food-top span:hover{
+.guanyu span:hover{
     background:#fff;
+}
+.guanyu span a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 .food-midd{
     width: 1200px;
     height: 0;
     border-bottom:1px solid #444; 
+}
+.food-bottom{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.food-bottom P{     
+    color: #888;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+}
+.food-bottom P a{
+    color: rgb(204, 201, 201);
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+.food-bottom P a:hover{
+    color: #f70;
+}
+.suo{
+    text-align: center;
+    margin-top: 20px;
+}
+.suo input[type=text]{
+    width: 200px;
+    height: 30px;
+    border: none;
+    text-indent: 10px;
+    margin-right: 5px;
+    background: #444;
+    color: #222;
+    outline: none;
+    border-radius:2px; 
+    transition: all 0.5s;
+}
+.suo input[type=button]{
+    width: 50px;
+    height: 30px;
+    background: #707070;
+    box-shadow: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    border-radius:3px; 
+    color: #222;
+    transition: all 0.5s;
+    outline: none;
+}
+.suo input[type=button]:hover{
+    background: #fff;
+}
+.jing{
+    text-align: center;
+    height: 20px;
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.jing a{
+    color: #888;
+    transition: all 0.3s;
+}
+.jing a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.jing img{
+    vertical-align: top;
+    margin-right: 5px;
 }
 /*首次进入遮罩层*/
 .mark-b {
@@ -326,4 +472,58 @@
     color: #ccc;
     float: right;
     margin-top: 25px;
+    transition: all 0.3s;
 }
+.mark-con a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.checkbox{
+    display: inline-block;
+    margin-top: 26px;
+    /* color: #fff; */
+    color: #ee5a0b;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    /* vertical-align: middle; */
+}
+.checkbox input{
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+/*回到顶部*/
+.return-top{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -70px;
+    right: 25px;
+    border-radius: 5px;
+    background: url("../img/top1.png")no-repeat center ;
+    background-size:40px 40px; 
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.return-top:hover{
+    background: url("../img/top2.png")no-repeat center;
+    background-size:40px 40px; 
+}
+.return-top:hover .return-border{
+    transform:rotate(1800deg);
+}
+.return-border{
+    width: 60px;
+    height: 60px;
+    border-top: 2px solid #80bd01;
+    box-shadow: 0px -2px 5px #888888;
+    transition: all 3s;
+    border-radius: 60px;
+}
+
+
+
+
+
+
