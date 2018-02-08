@@ -19,6 +19,7 @@ body::-webkit-scrollbar-thumb
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 0px 2px 3px #ccc inset;
 }
 .nav{
     width: 1200px;
@@ -71,8 +72,9 @@ body::-webkit-scrollbar-thumb
     display: inline-block;
     padding: 0 15px;
     margin-right: 15px;
-    font-size: 14px;
+    font-size: 15px;
     transition: all 0.3s;
+    color:#666;
 }
 .nav-con a:hover{
     color: #f70;
@@ -145,6 +147,8 @@ body::-webkit-scrollbar-thumb
     box-sizing: border-box;
     box-shadow:0px -8px 15px #222 inset;
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#222),color-stop(1,#333));
+    /* filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#222,endcolorstr=#333,gradientType=0); */
+    background: -ms-linear-gradient(top, #222, #333);  
 }
 .con2 h3{
     font-size: 30px;
@@ -244,7 +248,8 @@ body::-webkit-scrollbar-thumb
 }
 .con5-left{
     color: #ffffff;
-    background: -webkit-linear-gradient(top,#fa7d3c,#f55f10); 
+    background-image: -ms-linear-gradient(top, #fa7d3c, #f55f10);  
+    background-image: -webkit-linear-gradient(top,#fa7d3c,#f55f10); 
 }
 .con5-right{
     color: #333;

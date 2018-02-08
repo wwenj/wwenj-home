@@ -1,3 +1,6 @@
+require('../css/reset.css')
+require('../css/main.css')
+var $=require('jquery');
 $(function ($) {
     /*如果本地没有记录 进入*/
     if (localStorage.mark!= 1 && sessionStorage.mark!= 1) {
