@@ -1,6 +1,6 @@
 # 个人网站首页
  [个人网站地址 http://www.wwenj.com/](http://www.wwenj.com/)
-
+**vue重写，组件封装，增加响应式**
  ## 项目截图
 
 ![预览截图](https://github.com/wwenj/wwenj-home/blob/master/Screenshots/1.png)
